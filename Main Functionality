@@ -1,0 +1,61 @@
+1) Check Balance
+
+	-> Parameters:
+		-> Source Account: ’Checking’ or ‘Savings’ or ‘VISA’
+
+	-> Output:
+		-> Display the balance
+
+2) Pay my VISA/Credit Card/Master Card
+
+	-> Parameters:
+		-> Source Account (Optional), default = ‘Checking’
+
+	-> Output:
+		-> Pay Current Balance from source account
+		-> Display confirmation
+
+3) Transfer [AMOUNT] dollars from [SOURCE] to [DEST]
+
+	-> Parameters:
+		-> Source Account
+		-> Destination Account
+		-> Amount
+
+	-> Output:
+		-> Display Confirmation
+
+4) Find the nearest branch/navigate me to the bank/navigate me/nearest branch/etc
+
+	-> Output:
+		-> Start google maps with the ‘TD Bank’ search option
+
+
+5)Check my stock portfolio/Check my stocks/How are my stocks doing
+
+	-> Output:
+		-> Display a list of all your stocks and what their current stock price is
+
+6) Check the [STOCK] stock/[STOCK] stock/Current stock price of [STOCK]/[STOCK] current price
+
+	-> Input:
+		-> Stock
+
+	-> Output:
+		-> Current stock price of STOCK
+
+7) How much interest am I earning
+
+	-> Input: account
+
+	-> Output: Display how much interest was earned in the past year on ACCOUNT
+
+8) Am I in the red/Am I in overdraft
+
+	-> Output:
+		-> Check if any accounts are in overdraft
+
+9) Pay my bills
+
+	-> ???
+
