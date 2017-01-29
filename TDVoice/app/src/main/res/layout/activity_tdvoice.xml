@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient"
+    android:background="?android:attr/colorControlActivated"
     android:orientation="vertical" >
 
     <TextView
@@ -19,18 +19,20 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
 
         <ImageButton
             android:id="@+id/btnSpeak"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="277dp"
+            android:layout_height="200dp"
             android:background="@null"
-            android:src="@drawable/ico_mic" />
+            android:src="@drawable/ico_mic"
+            android:layout_weight="3.75" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,7 +40,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/tap_on_mic"
             android:textColor="@color/white"
-            android:textSize="15dp"
+            android:textSize="24sp"
             android:textStyle="normal" />
     </LinearLayout>
 
