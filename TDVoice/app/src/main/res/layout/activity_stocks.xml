@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_stocks"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.tdvoice.tdvoice.Stocks"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:background="?android:attr/colorControlActivated"
+        android:clickable="false"
+        android:text="Stock Peek"
+        android:id="@+id/button2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:paddingTop="120dp"
+        android:textSize="30sp"
+        android:paddingBottom="20dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:paddingTop="50dp"
+        android:textSize="24sp"
+        android:paddingLeft="130dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:paddingTop="50dp"
+        android:paddingLeft="130dp"
+        android:textSize="36sp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:paddingTop="50dp"
+        android:paddingLeft="130dp"
+        android:textSize="30sp"
+        android:background="@android:color/white" />
+
+</LinearLayout>

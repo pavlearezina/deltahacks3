@@ -39,8 +39,11 @@
         <activity
             android:name=".billlist"
             android:label="@string/title_activity_billlist"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Stocks"
+            android:label="@string/title_activity_stocks"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-
     </application>
 
 </manifest>

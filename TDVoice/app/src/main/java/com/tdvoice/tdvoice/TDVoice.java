@@ -47,6 +47,7 @@ public class TDVoice extends Activity {
     Bills Heating = new Bills(45, "Heating");
     Bills Internet = new Bills(79, "Internet");
     Bills Phone = new Bills(35, "Phone");
+    private static JSONObject universe;
     //Bills[] Billist = new Bills[6];
     private static ArrayList<Bills> Billist = new ArrayList<Bills>();
 
@@ -73,8 +74,13 @@ public class TDVoice extends Activity {
         return Billist;
     }
 
+    public static JSONObject getStock(){
+        return universe;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         Billist.add(Visa);
         Billist.add(Hydro);
         Billist.add(Rent);
@@ -309,7 +315,9 @@ public class TDVoice extends Activity {
                                     txtSpeechInput.setText("x");
                                     try {
                                         JSONObject json = new JSONObject(response);
-
+                                        universe = new JSONObject(response);
+                                        Intent myyIntent = new Intent(TDVoice.this,Stocks.class);
+                                        TDVoice.this.startActivity(myyIntent);
                                         String currentPrice = json.getString("l_cur");
 
                                         txtSpeechInput.setText(currentPrice);
